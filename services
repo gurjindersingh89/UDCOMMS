@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | UDCOMMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">UDCOMMS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <h1>Our Services</h1>
+    <div class="service-list">
+      <div class="service-item">
+        <h2>Fibre Optic Installation</h2>
+        <p>Expert fibre optic installations including fusion splicing, testing, and certification for commercial and residential networks.</p>
+      </div>
+      <div class="service-item">
+        <h2>Data Cabling & Networking</h2>
+        <p>Structured cabling for offices, data centres, and campuses with CAT6, CAT6A, and fibre backbones.</p>
+      </div>
+      <div class="service-item">
+        <h2>Chorus Network Services</h2>
+        <p>Experienced in installations and fault resolutions on the Chorus network with full compliance.</p>
+      </div>
+      <div class="service-item">
+        <h2>Data Centre Fit-Outs</h2>
+        <p>Full-scale cabling, labelling, and management for high-density environments in major NZ data centres.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UDCOMMS</p>
+  </footer>
+</body>
+</html>
