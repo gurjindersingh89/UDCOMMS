@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
+  <title>Contact UDCOMMS</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Contact Me</h1>
+    <div class="logo">UDCOMMS</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
@@ -16,25 +16,20 @@
   </header>
 
   <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">Name:</label><br/>
-        <input type="text" id="name" name="name" required /><br/><br/>
-        
-        <label for="email">Email:</label><br/>
-        <input type="email" id="email" name="_replyto" required /><br/><br/>
-        
-        <label for="message">Message:</label><br/>
-        <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
-        
-        <button type="submit">Send</button>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>Have a project in mind? Reach out to the UDCOMMS team!</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; 2025 UDCOMMS</p>
   </footer>
 </body>
 </html>
