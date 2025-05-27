@@ -1,3 +1,4 @@
+// Show alert when user clicks "Discover Our Services" button on home page
 function showAlert() {
-  alert("Thanks for visiting UDCOMMS! We’re proud to serve New Zealand’s network needs.");
+  alert("Thanks for your interest! Check out our Services page to learn more.");
 }
