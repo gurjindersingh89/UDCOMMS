@@ -1,59 +1,120 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+  background-color: #f4f7fa;
+  color: #333;
 }
 
 header {
-    background: #004466;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
+  background-color: #002244;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar {
-    background: #006699;
-    padding: 10px 0;
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-main {
-    margin-top: 20px;
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #005792, #0075a2);
+  color: white;
 }
 
-.intro, .services {
-    margin-bottom: 30px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
-.services ul {
-    list-style: disc inside;
-    padding-left: 20px;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: white;
+  color: #0075a2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #e9f0f4;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.feature-card h2 {
+  color: #005792;
+  margin-bottom: 10px;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #0075a2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
-    background: #004466;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background: #002244;
+  color: white;
+  margin-top: 60px;
 }
