@@ -5,7 +5,20 @@ body {
   background-color: #0f172a;
   color: #f1f5f9;
 }
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
 
+header img {
+  margin-right: 10px;
+}
+
+header span {
+  color: #333;
+}
 /* Navbar */
 .navbar {
   background: transparent;
