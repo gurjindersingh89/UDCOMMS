@@ -1,52 +1,276 @@
-<!-- UDCOMMS Website Project Files -->
-
-<!-- index.html -->
 <!DOCTYPE html>
+
+
+
+
+
 <html lang="en">
 <head>
+<tital>
+<!-- Basic Meta -->
+<meta name="description" content="UDCOMMS specializes in fiber & wireless infrastructure, Chorus network builds, and high-performance connectivity projects across New Zealand.">
+<meta name="keywords" content="UDCOMMS, fiber installation, MPO testing, Chorus network, structured cabling, UFB rollout, telecom infrastructure, New Zealand">
+<meta name="author" content="Gurjinder Singh">
+
+<!-- Open Graph for LinkedIn / Facebook -->
+<meta property="og:title" content="UDCOMMS | Telecom Infrastructure Experts">
+<meta property="og:description" content="From MPO deployments to co-location rack builds, UDCOMMS delivers quality-driven, future-proofed connectivity solutions.">
+<meta property="og:image" content="https://udcomms.co.nz/preview.jpg"> <!-- Replace with a real image path -->
+<meta property="og:url" content="https://udcomms.co.nz">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UDCOMMS | Chorus-Ready Telecom Expertise">
+<meta name="twitter:description" content="Specialists in fiber installation, structured cabling, and digital tools for scalable network deployment.">
+<meta name="twitter:image" content="https://udcomms.co.nz/preview.jpg">
+
+
+</tital>
+  
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UDCOMMS | Telecom & Data Cabling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UDCOMMS | Universal Data Communications Ltd</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo">UDCOMMS</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main class="hero">
-    <h1>Reliable Telecom & Data Cabling Solutions</h1>
-    <p>Over 10 years of experience delivering quality fibre and data services across New Zealand.</p>
-    <button onclick="showAlert()">Discover Our Services</button>
-  </main>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+     <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why">Why UDCOMMS</a></li>
+          <li class="nav-item">
+  <a class="nav-link" href="capabilities.html">Capabilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <section class="features">
-    <div class="feature-card">
-      <h2>Fibre Optic Work</h2>
-      <p>Certified installations, splicing, and testing across enterprise and ISP networks.</p>
-    </div>
-    <div class="feature-card">
-      <h2>Data Cabling</h2>
-      <p>Structured cabling solutions tailored for performance and compliance.</p>
-    </div>
-    <div class="feature-card">
-      <h2>Chorus Network</h2>
-      <p>Trusted partner with extensive field experience across the Chorus infrastructure.</p>
+  <!-- Hero Section -->
+ <section class="hero-slideshow">
+  <div class="slideshow">
+    <img src="Data_centre.jpg" class="slide show" />
+    <img src="Data_centre01.jpg" class="slide" />
+    <img src="Data_centre02.jpg" class="slide" />
+    <img src="Data_Centre03.jpg" class="slide" />
+    <img src="Data_Centre04.jpg" class="slide" />
+    <img src="Data_Centre05.jpg" class="slide" />
+  </div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Powering NZ’s Fibre-Connected Future</h1>
+
+    
+    <p>UDCOMMS delivers expert fibre & data infrastructure across Auckland—from structured cabling to Chorus integration.</p>
+    <a href="#services" class="btn btn-primary">Explore Our Services</a>
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services" class="services container">
+    <div class="row text-center">
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Fibre Installations</h3>
+        <p>High-speed fibre deployment for commercial, residential, and edge-center builds.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Structured Cabling</h3>
+        <p>Clean, scalable cabling and patch panel solutions for future-ready networks.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Network Upgrades & Audits</h3>
+        <p>We assess, upgrade, and future-proof your network with full audits and compliance checks.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Fault Resolution</h3>
+        <p>End-to-end fault isolation and resolution—from diagnostics to restoration.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="500">
+        <h3>Advanced Testing</h3>
+        <p>MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection for optimal performance.</p>
+      </div>
+      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="600">
+        <h3>Chorus Infrastructure</h3>
+        <p>Certified in ZOFDF, OFDF, AOFDF systems and co-location upgrades across NZ.</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 UDCOMMS | Telecommunications & Data Cabling Experts</p>
+  <!-- Why Choose UDCOMMS -->
+  <section id="why" class="why-choose-us container text-center py-5">
+    <h2 class="mb-4" data-aos="fade-up">Why Choose UDCOMMS</h2>
+    <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+      With over 8 years of experience, we don’t just build networks—we maintain, upgrade, and protect them.
+    </p>
+    <div class="row">
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box p-4 rounded h-100">
+          <h5>Local Expertise</h5>
+          <p class="small">Based in Auckland, we understand the terrain, the tech, and the telco landscape.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box p-4 rounded h-100">
+          <h5>Chorus Certified</h5>
+          <p class="small">We’re trusted to work on OFDF, AOFDF, and ZOFDF systems across New Zealand.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box p-4 rounded h-100">
+          <h5>Future-Proof Installs</h5>
+          <p class="small">From MPO to high-density fibre, we build networks that scale with your needs.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-box p-4 rounded h-100">
+          <h5>Transparent Communication</h5>
+          <p class="small">We keep you informed at every step—no surprises, just solid delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats-section text-center py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-4">Our Impact in Numbers</h2>
+      <div class="row">
+        <div class="col-md-3 stat-box">
+          <h3><span class="counter" data-target="100">0</span>+</h3>
+          <p>Network Builds</p>
+        </div>
+        <div class="col-md-3 stat-box">
+          <h3><span class="counter" data-target="8">0</span>+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="col-md-3 stat-box">
+          <h3><span class="counter" data-target="24">0</span>/7</h3>
+          <p>Support Availability</p>
+        </div>
+        <div class="col-md-3 stat-box">
+          <h3><span class="counter" data-target="99.9">0</span>%</h3>
+          <p>Network Reliability</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action Banner -->
+  <section class="cta-banner text-center py-5" data-aos="zoom-in">
+    <div class="container">
+      <h2 class="mb-3">Let’s Build Your Next-Gen Network</h2>
+      <p class="mb-4">From fibre rollouts to co-location upgrades, UDCOMMS is your trusted partner in connectivity.</p>
+      <a href="#contact" class="btn btn-primary">Request a Quote</a>
+    </div>
+  </section>
+
+
+<!-- About Us -->
+<section id="about" class="about-section container py-5 text-center" data-aos="fade-up">
+  <h2 class="mb-4">About UDCOMMS</h2>
+  <p class="lead mb-4">
+    Universal Data Communications Ltd (UDCOMMS) is an Auckland-based team of fibre infrastructure specialists with more than 8 years of experience building, maintaining, and upgrading networks across New Zealand.
+  </p>
+  <p class="mb-3">
+    From structured cabling in commercial builds to MPO testing in co-location facilities, our technicians combine precision engineering with field-tested expertise. We are certified across Chorus infrastructure, ZOFDF/OFDF systems, and advanced fibre diagnostics including OTDR, iOLM, Fluke DSX, and end-face inspections.
+  </p>
+  <p class="mb-3">
+    At UDCOMMS, we believe in transparent communication, rapid issue resolution, and scalable network design. Whether you're laying the groundwork for a future-focused build or addressing faults in a critical link—we’re here to deliver, long after the cables are cut and connected.
+  </p>
+</section>
+
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact container py-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="https://formspree.io/f/myzjlkzl" method="POST">
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+               <div class="mt-4 text-center">
+          <p><strong>Email:</strong> <a href="mailto:Ben@udcomms.co.nz">Ben@udcomms.co.nz</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+64242447500">+64 24 244 7500</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 UDCOMMS – Universal Data Communications Ltd. Auckland, NZ</p>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  </script>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('show');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('show');
+    }, 4000);
+  });
+</script>
 </body>
 </html>
-
-<!-- Remaining pages will follow in the next steps -->
