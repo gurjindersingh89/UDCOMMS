@@ -1,443 +1,547 @@
-/* Base Styles */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0f172a;
-    color: #f1f5f9;
-}
-
-/* Navbar */
-.navbar {
-    background: transparent;
-    transition: background 0.3s;
-}
-.navbar.scrolled {
-    background-color: #0f172a;
-}
-.navbar-brand img {
-    height: 120px;
-}
-.nav-link {
-    color: #f8fafc !important;
-}
-/* Dropdown menu styling for services */
-.navbar .dropdown-menu {
-    background-color: #1e293b; /* Dark background for dropdown */
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.navbar .dropdown-item {
-    color: #f8fafc !important;
-    padding: 10px 20px;
-    transition: background-color 0.2s ease;
-}
-.navbar .dropdown-item:hover {
-    background-color: #3b82f6; /* Blue hover */
-    color: #fff !important;
-}
-.navbar .dropdown-divider {
-    border-top: 1px solid #334155;
-}
-
-
-/* Hero Slideshow (for index.html) */
-.hero-slideshow {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-.slideshow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-.slideshow .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.slideshow .slide.show {
-    opacity: 1;
-    z-index: 1;
-}
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: #f8fafc;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 20px;
-}
-.hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-.hero-content p {
-    font-size: 1.25rem;
-    margin-top: 20px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-.hero-content .btn-primary {
-    background-color: #3b82f6;
-    border: none;
-    margin-top: 30px;
-}
-
-/* Gradient Text Animation for Hero Titles */
-.hero-content h1,
-.hero-content p,
-.hero-section-wifi-page h1, /* Applied to all dedicated page heroes */
-.hero-section-wifi-page p.lead { /* Applied to all dedicated page heroes lead */
-    background: linear-gradient(270deg, #ebf034, #18f0a1, #cca300, #0356bc,#7280d0,#83848a,#eb7b7b,#eb7b7b,#e7d963);
-    background-size: 800% 800%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientFlow 15s ease infinite;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-}
-
-@keyframes gradientFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Services (Removed from index.html, but classes remain for dedicated pages if needed) */
-.services {
-    padding: 80px 20px; /* This section will be removed from index.html */
-}
-.service-box {
-    background-color: #1e293b;
-    padding: 40px 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    color: #f1f5f9; /* Ensure text color is light within dark boxes */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Added for consistency */
-}
-.service-box h3, .service-box h2 { /* Targeting all headings within service-box */
-    color: #3b82f6; /* Consistent blue for headings */
-    font-weight: 600; /* Consistent font weight */
-    margin-bottom: 25px; /* Consistent margin */
-}
-
-
-/* Why Choose Us */
-.why-choose-us {
-    padding: 80px 20px;
-}
-.feature-box {
-    background-color: #1e293b;
-    color: #f8fafc;
-    transition: transform 0.3s ease;
-    padding: 40px 30px; /* Added padding for consistency */
-    border-radius: 12px; /* Added border-radius for consistency */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Added for consistency */
-}
-.feature-box:hover {
-    transform: translateY(-5px);
-}
-
-/* Stats Section */
-.stats-section {
-    background-color: #0f172a;
-    color: #f8fafc;
-}
-.stat-box {
-    margin-bottom: 30px;
-}
-.stat-box h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #3b82f6;
-}
-.stat-box p {
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-/* CTA Banner */
-.cta-banner {
-    background: linear-gradient(to right, #1e293b, #0f172a);
-    color: #f8fafc;
-}
-.cta-banner h2 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-.cta-banner p {
-    font-size: 1.1rem;
-}
-.cta-banner .btn-primary { /* Ensure button style is consistent */
-    background-color: #3b82f6;
-    border: none;
-    margin-top: 30px;
-}
-
-
-/* About Section */
-.about-section {
-    color: #f1f5f9;
-    line-height: 1.7;
-}
-.about-section p.lead {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-/* Contact Section */
-.contact input,
-.contact textarea {
-    background-color: #1e293b;
-    color: #f8fafc;
-    border: 1px solid #334155;
-}
-.contact input::placeholder,
-.contact textarea::placeholder {
-    color: #94a3b8;
-}
-.contact input:focus,
-.contact textarea:focus {
-    border-color: #3b82f6;
-    box-shadow: none;
-}
-
-/* Footer */
-.footer {
-    background-color: #1e293b;
-    color: #94a3b8;
-}
-.footer a {
-    color: #94a3b8;
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Typography */
-@media (max-width: 768px) {
-    .hero-content h1, .hero-section-wifi-page h1 {
-        font-size: 2.2rem;
-    }
-    .hero-content p, .hero-section-wifi-page p.lead {
-        font-size: 1rem;
-    }
-    .capabilities-header h1 {
-        font-size: 2.2rem;
-    }
-    .capabilities-header p {
-        font-size: 1rem;
-    }
-}
-
-/* Capabilities Page Styles */
-.capabilities-header {
-    background-color: #0f172a;
-    color: #f8fafc;
-    height: 60vh;
-    padding: 80px 20px;
-    position: relative;
-    margin-top: 56px;
-}
-
-.capabilities-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.capabilities-header p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.capabilities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 60px 20px 80px;
-}
-
-.capability-box {
-    background-color: #1e293b;
-    padding: 30px;
-    border-radius: 12px;
-    color: #f1f5f9;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.capability-box:hover {
-    transform: translateY(-5px);
-}
-
-.capability-box h3 {
-    color: #3b82f6;
-    margin-bottom: 15px;
-}
-
-.capability-box ul {
-    padding-left: 20px;
-    color: #e2e8f0;
-}
-
-.capability-box li {
-    margin-bottom: 8px;
-}
-
-/* Logo Animation */
-.udc-logo {
-  
-    animation: glowPulse 3s ease-in-out infinite;
-    opacity: 0; /* Initial state for reveal animation */
-    transform: translateY(-50px); /* Initial state for reveal animation */
-    animation: logoReveal 1.2s ease forwards, glowPulse 20s ease-in-out infinite; /* Combined animations */
-}
-@keyframes glowPulse {
- /*   0%, 100% { filter: drop-shadow(0 0 2px #f1c232); }
-     70% { filter: drop-shadow(0 0 4px #6dc707); }
-     55% { filter: drop-shadow(0 0 6px #2286ea); }
-    40% { filter: drop-shadow(0 0 8px #ffe599); }
-
-*/
-
-     0% { filter: drop-shadow(0 0 2px #f1c232); }   /* Subtle yellow at start */
-            10% { filter: drop-shadow(0 0 2px #f1c232); }  /* Hold subtle yellow */
-            100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
-            20% { filter: drop-shadow(0 0 4px #6dc707); }  /* Slightly brighter green */
-           100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
-            35% { filter: drop-shadow(0 0 6px #2286ea); }  /* Medium bright blue */
-            40% { filter: drop-shadow(0 0 8px #ffe599); }  /* Brightest light yellow/orange */
-           100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
-            78% { filter: drop-shadow(0 0 2px #f1c232); } /* Fade back to subtle yellow */
-            100% { filter: drop-shadow(0 0 0px #f1c232); } /* Hold no glow for the remainder of the loop */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Toggler Color Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
         }
-@keyframes logoReveal {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.navbar-brand img {
-    height: 120px; /* default might be 40–50px */
-    transition: transform 0.9s ease;
-}
+
+        /* Navbar */
+        .navbar {
+            background: transparent;
+            transition: background 0.3s;
+            position: fixed; /* Make navbar fixed at the top */
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure navbar is on top */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between brand and toggle/menu */
+            align-items: center;
+            padding: 1rem 20px; /* Add padding to navbar */
+        }
+        .navbar.scrolled {
+            background-color: #0f172a;
+        }
+        .navbar-brand img {
+            height: 120px;
+        }
+        .nav-link {
+            color: #f8fafc !important;
+            padding: 0.5rem 1rem; /* Add padding to nav links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6 !important; /* Blue hover for nav links */
+        }
+
+        /* Dropdown menu styling for services */
+        .navbar .dropdown-menu {
+            background-color: #1e293b; /* Dark background for dropdown */
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .navbar .dropdown-item {
+            color: #f8fafc !important;
+            padding: 10px 20px;
+            transition: background-color 0.2s ease;
+        }
+        .navbar .dropdown-item:hover {
+            background-color: #3b82f6; /* Blue hover */
+            color: #fff !important;
+        }
+        .navbar .dropdown-divider {
+            border-top: 1px solid #334155;
+        }
+
+        /* Hero Slideshow (for index.html) */
+        .hero-slideshow {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            /* Add padding-top to account for fixed navbar */
+            padding-top: 152px; /* Adjusted to account for navbar height (120px img + 2*16px padding) */
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+        .slideshow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .slideshow .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .slideshow .slide.show {
+            opacity: 1;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: #f8fafc;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-top: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero-content .btn-primary {
+            background-color: #3b82f6;
+            border: none;
+            margin-top: 30px;
+        }
+
+        /* Gradient Text Animation for Hero Titles */
+        .hero-content h1,
+        .hero-content p,
+        .hero-section-wifi-page h1,
+        .hero-section-wifi-page p.lead {
+            background: linear-gradient(270deg, #ebf034, #18f0a1, #cca300, #0356bc,#7280d0,#83848a,#eb7b7b,#eb7b7b,#e7d963);
+            background-size: 800% 800%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientFlow 15s ease infinite;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 20px;
+        }
+        .service-box {
+            background-color: #1e293b;
+            padding: 40px 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            color: #f1f5f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .service-box h3, .service-box h2 {
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        /* Why Choose Us */
+        .why-choose-us {
+            padding: 80px 20px;
+        }
+        .feature-box {
+            background-color: #1e293b;
+            color: #f8fafc;
+            transition: transform 0.3s ease;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .stat-box {
+            margin-bottom: 30px;
+        }
+        .stat-box h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+        .stat-box p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(to right, #1e293b, #0f172a);
+            color: #f8fafc;
+        }
+        .cta-banner h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .cta-banner p {
+            font-size: 1.1rem;
+        }
+        .cta-banner .btn-primary {
+            background-color: #3b82f6;
+            border: none;
+            margin-top: 30px;
+        }
+
+        /* About Section */
+        .about-section {
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+        .about-section p.lead {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact input,
+        .contact textarea {
+            background-color: #1e293b;
+            color: #f8fafc;
+            border: 1px solid #334155;
+        }
+        .contact input::placeholder,
+        .contact textarea::placeholder {
+            color: #94a3b8;
+        }
+        .contact input:focus,
+        .contact textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: none;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e293b;
+            color: #94a3b8;
+        }
+        .footer a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            .hero-content h1, .hero-section-wifi-page h1 {
+                font-size: 2.2rem;
+            }
+            .hero-content p, .hero-section-wifi-page p.lead {
+                font-size: 1rem;
+            }
+            .capabilities-header h1 {
+                font-size: 2.2rem;
+            }
+            .capabilities-header p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Capabilities Page Styles */
+        .capabilities-header {
+            background-color: #0f172a;
+            color: #f8fafc;
+            height: 60vh;
+            padding: 80px 20px;
+            position: relative;
+            margin-top: 56px;
+        }
+
+        .capabilities-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .capabilities-header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 60px 20px 80px;
+        }
+
+        .capability-box {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            color: #f1f5f9;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .capability-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .capability-box h3 {
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+
+        .capability-box ul {
+            padding-left: 20px;
+            color: #e2e8f0;
+        }
+
+        .capability-box li {
+            margin-bottom: 8px;
+        }
+
+        /* Logo Animation */
+        .udc-logo {
+            opacity: 0; /* Initial state for reveal animation */
+            transform: translateY(-50px); /* Initial state for reveal animation */
+            animation: logoReveal 1.2s ease forwards, glowPulse 10s ease-in-out infinite; /* Combined animations */
+        }
+        @keyframes glowPulse {
+            0% { filter: drop-shadow(0 0 0px #f1c232); }   /* No glow at start */
+            20% { filter: drop-shadow(0 0 0px #f1c232); }  /* Hold no glow for 2 seconds */
+            25% { filter: drop-shadow(0 0 2px #f1c232); }  /* Subtle yellow starts */
+            35% { filter: drop-shadow(0 0 4px #6dc707); }  /* Slightly brighter green */
+            50% { filter: drop-shadow(0 0 6px #2286ea); }  /* Medium bright blue */
+            60% { filter: drop-shadow(0 0 8px #ffe599); }  /* Brightest light yellow/orange */
+            80% { filter: drop-shadow(0 0 2px #f1c232); } /* Fade back to subtle yellow */
+            100% { filter: drop-shadow(0 0 0px #f1c232); } /* Fade to no glow */
+        }
+        @keyframes logoReveal {
+            to {
+                opacity: 1; /* Fully visible */
+                transform: translateY(0); /* Moves to its final vertical position */
+            }
+        }
+        .navbar-brand img {
+            height: 120px; /* default might be 40–50px */
+            transition: transform 0.9s ease;
+        }
 
 
-/* Core Values Section (from index.html) */
-.core-values {
-    background-color: #0f172a;
-    color: #f8fafc;
-}
+        /* Core Values Section (from index.html) */
+        .core-values {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
 
-.value-box {
-    font-size: 1.3rem;
-    font-weight: 600;
-    border: 2px solid #3b82f6;
-    border-radius: 10px;
-    padding: 30px 15px;
-    background-color: #1e293b;
-    transition: transform 0.3s ease;
-}
+        .value-box {
+            font-size: 1.3rem;
+            font-weight: 600;
+            border: 2px solid #3b82f6;
+            border-radius: 10px;
+            padding: 30px 15px;
+            background-color: #1e293b;
+            transition: transform 0.3s ease;
+        }
 
-.value-box span {
-    display: block;
-    font-size: 2rem;
-    font-weight: 800;
-    color: #3b82f6;
-    margin-top: 8px;
-}
+        .value-box span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #3b82f6;
+            margin-top: 8px;
+        }
 
-.value-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 10px #3b82f6;
-}
+        .value-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px #3b82f6;
+        }
 
-/* Styles specific to Dedicated Service Pages (e.g., wifi-solutions.html, fibre-installations.html) */
-.hero-section-wifi-page { /* Used as a common hero class for all dedicated service pages */
-    background: linear-gradient(to right, #0f172a, #1e293b); /* Darker gradient to match body/cta */
-    color: #f8fafc;
-    padding: 80px 0;
-    text-align: center;
-    margin-bottom: 40px;
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+        /* Styles specific to Dedicated Service Pages (e.g., wifi-solutions.html, fibre-installations.html) */
+        .hero-section-wifi-page { /* Used as a common hero class for all dedicated service pages */
+            background: linear-gradient(to right, #0f172a, #1e293b); /* Darker gradient to match body/cta */
+            color: #f8fafc;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
-/* Specific list styling for checkmarks on dedicated pages */
-.service-box ul.checkmark-list { /* New class for checkmark lists */
-    list-style: none;
-    padding-left: 0;
-}
-.service-box ul.checkmark-list li {
-    margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
-    color: #e2e8f0; /* Consistent light text color */
-}
-.service-box ul.checkmark-list li::before {
-    content: "✓"; /* Checkmark icon */
-    color: #34d399; /* Green from the gradient for consistency */
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    position: absolute;
-    left: 0;
-}
+        /* Specific list styling for checkmarks on dedicated pages */
+        .service-box ul.checkmark-list { /* New class for checkmark lists */
+            list-style: none;
+            padding-left: 0;
+        }
+        .service-box ul.checkmark-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: #e2e8f0; /* Consistent light text color */
+        }
+        .service-box ul.checkmark-list li::before {
+            content: "✓"; /* Checkmark icon */
+            color: #34d399; /* Green from the gradient for consistency */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+        }
 
-/* Ordered list styling for process sections on dedicated pages */
-.service-box ol {
-    padding-left: 20px;
-    color: #e2e8f0; /* Consistent light text color */
-}
-.service-box ol li {
-    margin-bottom: 8px;
-}
-/* Navbar */
-.navbar {
-    background: transparent;
-    transition: background 0.3s; /* This ensures a smooth transition */
-}
-.navbar.scrolled {
-    background-color: #0f172a; /* This is the background color when scrolled down */
-}
-/* Ensure other navbar styles are also present and consistent */
-.navbar-brand img {
-    height: 120px; /* Or whatever height your logo should be */
-}
-.nav-link {
-    color: #f8fafc !important; /* Text color for nav links */
-}
-/* Add or confirm these dropdown styles if you haven't already */
-.navbar .dropdown-menu {
-    background-color: #1e293b; /* Dark background for dropdown */
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.navbar .dropdown-item {
-    color: #f8fafc !important;
-    padding: 10px 20px;
-    transition: background-color 0.2s ease;
-}
-.navbar .dropdown-item:hover {
-    background-color: #3b82f6; /* Blue hover */
-    color: #fff !important;
-}
-.navbar .dropdown-divider {
-    border-top: 1px solid #334155;
-}
-  <!-- Scripts -->
+        /* Ordered list styling for process sections on dedicated pages */
+        .service-box ol {
+            padding-left: 20px;
+            color: #e2e8f0; /* Consistent light text color */
+        }
+        .service-box ol li {
+            margin-bottom: 8px;
+        }
+        /* Styles for the mobile toggler button container */
+        .navbar-toggler {
+            background-color: transparent; /* Makes the button background transparent */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* A light, semi-transparent border */
+            border-radius: 0.25rem; /* Slightly rounded corners for the button */
+            padding: 0.5rem 0.75rem; /* Padding inside the button */
+            cursor: pointer; /* Indicates it's clickable */
+            display: flex; /* Use flexbox to arrange the spans vertically */
+            flex-direction: column; /* Stack spans vertically */
+            justify-content: space-around; /* Distribute space evenly between lines */
+            width: 30px; /* Overall width of the hamburger icon area */
+            height: 24px; /* Overall height of the hamburger icon area */
+            position: relative; /* Useful if you need to position other elements relative to it */
+            z-index: 10; /* Ensures it's on top of other content if overlapping */
+
+            /* This rule hides the toggler button by default on larger screens (desktop) */
+            /* It will only show up when the screen width is less than 768px,
+               as defined in the media query below. */
+        }
+
+        /* Default color and appearance for the individual hamburger lines (spans) */
+        .navbar-toggler-icon {
+            display: block; /* Ensures each span takes its own line */
+            width: 100%; /* Each line takes the full width of the toggler button */
+            height: 2px; /* Thickness of each line */
+            background-color: white; /* *** This is the color of your hamburger lines *** */
+            border-radius: 1px; /* Slightly rounded ends for the lines */
+            transition: all 0.3s ease-in-out; /* Smooth transition for color changes on hover/focus */
+        }
+
+        /* Adds space between the hamburger lines */
+        .navbar-toggler-icon + .navbar-toggler-icon {
+            margin-top: 4px; /* 4px space between each line */
+        }
+
+        /* Optional: Change color of the lines when the toggler button is hovered or focused */
+        .navbar-toggler:hover .navbar-toggler-icon,
+        .navbar-toggler:focus .navbar-toggler-icon {
+            background-color: #e0e0e0; /* Lighter gray on hover/focus */
+        }
+
+        /* Hide menu items by default on small screens */
+        .nav-menu {
+            display: none; /* Hidden by default on mobile */
+            flex-direction: column;
+            width: 100%;
+            background-color: #1e293b; /* Solid background for the menu */
+            position: fixed; /* Changed to fixed */
+            top: 152px; /* Adjusted to be below the navbar */
+            left: 0;
+            height: calc(100vh - 152px); /* Take remaining viewport height */
+            overflow-y: auto; /* Enable scrolling if content overflows */
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 999; /* Ensure it's above most content */
+        }
+
+        .nav-menu.active {
+            display: flex; /* Shows the menu when the 'active' class is present */
+        }
+
+        /* Media query to hide the toggler on desktop and show the full menu */
+        @media (min-width: 768px) {
+            .navbar-toggler {
+                display: none; /* Hide toggler button on screens 768px and wider */
+            }
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                width: auto;
+                background-color: transparent;
+                box-shadow: none;
+                height: auto; /* Reset height for desktop */
+                overflow-y: visible; /* Reset overflow for desktop */
+            }
+            .nav-menu a {
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="https://placehold.co/120x120/0f172a/f1f5f9?text=LOGO" alt="Company Logo">
+        </div>
+        <button class="navbar-toggler" id="navbarToggler">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero-slideshow">
+        <div class="slideshow">
+            <!-- Placeholder slides for demonstration -->
+            <img src="https://placehold.co/1920x1080/1e293b/f1f5f9?text=Slide%201" class="slide show" alt="Slide 1">
+            <img src="https://placehold.co/1920x1080/334155/f1f5f9?text=Slide%202" class="slide" alt="Slide 2">
+            <img src="https://placehold.co/1920x1080/475569/f1f5f9?text=Slide%203" class="slide" alt="Slide 3">
+        </div>
+        <div class="hero-content">
+            <h1>Your Digital Transformation Partner</h1>
+            <p>Empowering businesses with cutting-edge IT solutions and unparalleled support.</p>
+            <button class="btn-primary p-3 rounded-md">Learn More</button>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-8 text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Our Site!</h1>
+        <p class="text-lg">Resize your browser window to see the mobile menu toggle.</p>
+        <p class="text-lg mt-4">Click the hamburger icon to open/close the menu on mobile.</p>
+    </div>
+
+    <!-- The div element representing our logo that will be animated -->
+    <div class="udc-logo">
+        UDC
+    </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -450,66 +554,32 @@ body {
         // Script to make navbar clear on scroll (kept for consistency, though 'scrolled' is now default)
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');
-            // This line will still toggle the class, but since 'scrolled' is default,
-            // it will effectively ensure it stays solid unless specific conditions remove it.
             nav.classList.toggle('scrolled', window.scrollY > 50);
         });
 
+        // JavaScript to toggle the mobile menu visibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.getElementById('navbarToggler');
+            const navMenu = document.getElementById('navMenu');
 
+            if (navbarToggler && navMenu) {
+                navbarToggler.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
 
-
-
-
-
-      /* Styles for the mobile toggler button container */
-.navbar-toggler {
-    background-color: transparent; /* Makes the button background transparent */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* A light, semi-transparent border */
-    border-radius: 0.25rem; /* Slightly rounded corners for the button */
-    padding: 0.5rem 0.75rem; /* Padding inside the button */
-    cursor: pointer; /* Indicates it's clickable */
-    display: flex; /* Use flexbox to arrange the spans vertically */
-    flex-direction: column; /* Stack spans vertically */
-    justify-content: space-around; /* Distribute space evenly between lines */
-    width: 30px; /* Overall width of the hamburger icon area */
-    height: 24px; /* Overall height of the hamburger icon area */
-    position: relative; /* Useful if you need to position other elements relative to it */
-    z-index: 10; /* Ensures it's on top of other content if overlapping */
-
-    /* This rule hides the toggler button by default on larger screens (desktop) */
-    /* It will only show up when the screen width is less than 768px,
-       as defined in the media query below. */
-}
-
-/* Default color and appearance for the individual hamburger lines (spans) */
-.navbar-toggler-icon {
-    display: block; /* Ensures each span takes its own line */
-    width: 100%; /* Each line takes the full width of the toggler button */
-    height: 2px; /* Thickness of each line */
-    background-color: white; /* *** This is the color of your hamburger lines *** */
-    border-radius: 1px; /* Slightly rounded ends for the lines */
-    transition: all 0.3s ease-in-out; /* Smooth transition for color changes on hover/focus */
-}
-
-/* Adds space between the hamburger lines */
-.navbar-toggler-icon + .navbar-toggler-icon {
-    margin-top: 4px; /* 4px space between each line */
-}
-
-/* Optional: Change color of the lines when the toggler button is hovered or focused */
-.navbar-toggler:hover .navbar-toggler-icon,
-.navbar-toggler:focus .navbar-toggler-icon {
-    background-color: #e0e0e0; /* Lighter gray on hover/focus */
-}
-
-/* Media query to hide the toggler on desktop and show the full menu */
-@media (min-width: 768px) {
-    .navbar-toggler {
-        display: none; /* Hide toggler button on screens 768px and wider */
-    }
-    /* You'll also need CSS here to display your full menu items for desktop */
-    /* For example: */
-    /* .nav-menu { display: flex; flex-direction: row; position: static; width: auto; background-color: transparent; box-shadow: none; } */
-    /* .nav-menu a { padding: 0.5rem 1rem; } */
-}
+        // Basic slideshow functionality
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow .slide');
+        function showSlides() {
+            slides.forEach((slide) => slide.classList.remove('show'));
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].classList.add('show');
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        showSlides();
     </script>
+</body>
+</html>
