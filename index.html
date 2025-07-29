@@ -1,336 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" href="udc-logo.png" type="image/x-icon" style="height: 200px; width: auto;">
-<tital>
-<!-- Basic Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="UDCOMMS specializes in fiber & wireless infrastructure, Chorus network builds, and high-performance connectivity projects across New Zealand.">
-<meta name="keywords" content="UDCOMMS, fiber installation, MPO testing, Chorus network, structured cabling, UFB rollout, telecom infrastructure, New Zealand">
-<meta name="author" content="Gurjinder Singh">
+    <link rel="icon" href="udc-logo.png" type="image/x-icon" style="height: 200px; width: auto;">
 
-<!-- Page Title -->
-<title>UDCOMMS | Fiber & Wi-Fi Solutions in Auckland</title>
-<!-- Description -->
-<meta name="description" content="UDCOMMS specializes in fiber installation, Wi-Fi setup, and telecom infrastructure services across Auckland and wider New Zealand.">
-<!-- Keywords -->
-<meta name="keywords" content="fiber installation, Wi-Fi setup, Chorus certified, telecom infrastructure NZ, structured cabling, fault resolution, smart fiber audit">
-<!-- Author -->
-<meta name="author" content="Gurjinder Singh">
-<!-- Viewport for Mobile -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>UDCOMMS | Fiber & Wi-Fi Solutions in Auckland</title>
 
+    <!-- Basic SEO Meta Tags -->
+    <meta name="description" content="UDCOMMS specializes in fiber & wireless infrastructure, Chorus network builds, and high-performance connectivity projects across New Zealand. Expert fiber installation, Wi-Fi setup, and telecom infrastructure services across Auckland and wider New Zealand.">
+    <meta name="keywords" content="UDCOMMS, fiber installation, MPO testing, Chorus network, structured cabling, UFB rollout, telecom infrastructure, New Zealand, Wi-Fi setup, Chorus certified, fault resolution, smart fiber audit, high-speed wifi design, data cabling, PBX installation, business phone systems, network solutions NZ, industrial standards wifi, fiber optic cabling, Auckland wifi, commercial wifi, network upgrades, network audits, advanced testing">
+    <meta name="author" content="Gurjinder Singh">
 
-  
-<!-- Open Graph for LinkedIn / Facebook -->
-<meta property="og:title" content="UDCOMMS | Telecom Infrastructure Experts">
-<meta property="og:description" content="From MPO deployments to co-location rack builds, UDCOMMS delivers quality-driven, future-proofed connectivity solutions.">
-<meta property="og:image" content="https://udcomms.co.nz/preview.jpg"> <!-- Replace with a real image path -->
-<meta property="og:url" content="https://udcomms.co.nz">
-<meta property="og:type" content="website">
-  <meta property="og:title" content="UDCOMMS | Telecom Infrastructure Experts">
-<meta property="og:description" content="From MPO fiber builds to whole-home Wi-Fi installs—UDCOMMS delivers 100% safety, quality, versatility, and productivity.">
-<meta property="og:image" content="https://udcomms.co.nz/assets/preview.jpg"> <!-- Use your branded image -->
-<meta property="og:url" content="https://udcomms.co.nz">
-<meta property="og:type" content="website">
+    <!-- Open Graph for LinkedIn / Facebook -->
+    <meta property="og:title" content="UDCOMMS | Telecom Infrastructure Experts">
+    <meta property="og:description" content="From MPO fiber builds to whole-home Wi-Fi installs—UDCOMMS delivers 100% safety, quality, versatility, and productivity.">
+    <meta property="og:image" content="https://udcomms.co.nz/assets/preview.jpg"> <!-- Ensure this path is correct -->
+    <meta property="og:url" content="https://udcomms.co.nz">
+    <meta property="og:type" content="website">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="UDCOMMS | Chorus-Ready Telecom Expertise">
-<meta name="twitter:description" content="Specialists in fiber installation, structured cabling, and digital tools for scalable network deployment.">
-<meta name="twitter:image" content="https://udcomms.co.nz/preview.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="UDCOMMS | Chorus-Ready Connectivity Solutions">
-<meta name="twitter:description" content="Auckland’s fiber and Wi-Fi specialists. Future-proofed performance, tested precision, and transparent delivery.">
-<meta name="twitter:image" content="https://udcomms.co.nz/assets/preview.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UDCOMMS | Chorus-Ready Connectivity Solutions">
+    <meta name="twitter:description" content="Auckland’s fiber and Wi-Fi specialists. Future-proofed performance, tested precision, and transparent delivery.">
+    <meta name="twitter:image" content="https://udcomms.co.nz/assets/preview.jpg"> <!-- Ensure this path is correct -->
 
-</tital>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="udc=logo.png" type="image/x-icon">
-  <title>UDCOMMS | Universal Data Communications Ltd</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="udc-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Custom styles for solutions overview on index.html */
+        .solutions-overview-section {
+            padding: 80px 20px;
+            background-color: #0f172a; /* Dark background consistent with body */
+            color: #f1f5f9;
+        }
+        .solutions-overview-section h2 {
+            color: #f8fafc; /* White heading */
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        .solution-card {
+            background-color: #1e293b; /* Darker box background */
+            padding: 40px 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            color: #f1f5f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            height: 100%; /* Ensure cards are same height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+        }
+        .solution-card h3 {
+            color: #3b82f6; /* Blue heading */
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .solution-card p {
+            margin-bottom: 25px;
+            flex-grow: 1; /* Allows paragraph to take available space */
+        }
+        .solution-card .btn-primary {
+            background-color: #3b82f6;
+            border: none;
+            align-self: flex-start; /* Aligns button to the left */
+        }
+        .solution-card .btn-primary:hover {
+            background-color: #218838; /* Keep original hover green */
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-     <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#why">Why UDCOMMS</a></li>
-          <li class="nav-item">
-  <a class="nav-link" href="capabilities.html">Capabilities</a></li>
-
-
-          <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
- <section class="hero-slideshow">
-  <div class="slideshow">
-    <img src="Data_centre.jpg" class="slide show" />
-    <img src="Data_centre01.jpg" class="slide" />
-    <img src="Data_centre02.jpg" class="slide" />
-    <img src="Data_Centre03.jpg" class="slide" />
-    <img src="Data_Centre04.jpg" class="slide" />
-    <img src="Data_Centre05.jpg" class="slide" />
-  </div>
-  <div class="hero-content" data-aos="fade-up">
-    <h1>Powering NZ’s Fibre-Connected Future</h1>
-
-    
-    <p>UDCOMMS delivers expert fibre & data infrastructure across Auckland—from structured cabling to Chorus integration.</p>
-    <a href="#services" class="btn btn-primary">Explore Our Services</a>
-  </div>
-</section>
-
-  <!-- Services -->
-  <section id="services" class="services container">
-    <div class="row text-center">
-      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="100">
-        <h3>Fibre Installations</h3>
-        <p>High-speed fibre deployment for commercial, residential, and edge-center builds.</p>
-      </div>
-      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="200">
-        <h3>Structured Cabling</h3>
-        <p>Clean, scalable cabling and patch panel solutions for future-ready networks.</p>
-      </div>
-      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="300">
-        <h3>Network Upgrades & Audits</h3>
-        <p>We assess, upgrade, and future-proof your network with full audits and compliance checks.</p>
-      </div>
-      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="400">
-        <h3>Fault Resolution</h3>
-        <p>End-to-end fault isolation and resolution—from diagnostics to restoration.</p>
-      </div>
-      <div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="500">
-        <h3>Advanced Testing</h3>
-        <p>MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection for optimal performance.</p>
-      </div>
-
-<div class="col-md-4 service-box" data-aos="zoom-in" data-aos-delay="600">
-  <h3>Wi-Fi Solutions</h3>
-  <p>Reliable indoor/outdoor coverage, smart AP placement, mesh setups, and commercial-grade wireless deployments for homes and offices.</p>
-</div>
-
-
-    </div>
-  </section>
-
-  <!-- Why Choose UDCOMMS -->
-  
-  <section id="why" class="why-choose-us container text-center py-5">
-    <h2 class="mb-4" data-aos="fade-up">Why Choose UDCOMMS</h2>
-    <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-      With over 8 years of experience, we don’t just build networks—we maintain, upgrade, and protect them. Our work is grounded in precision, transparency, and a commitment to future-proofing New Zealand’s connectivity
-    </p> 
-    <div class="row">
-      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="feature-box p-4 rounded h-100">
-          <h5>Local Expertise</h5>
-          <p class="small">Based in Auckland, we understand the terrain, the tech, and the telco landscape.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+                            <li><a class="dropdown-item" href="Fibre Installations.html">Fibre Installations</a></li>
+                            <li><a class="dropdown-item" href="Structured Cabling.html">Structured Cabling</a></li>
+                            <li><a class="dropdown-item" href="Network Upgrades & Audits.html">Network Upgrades & Audits</a></li>
+                            <li><a class="dropdown-item" href="Fault Resolution.html">Fault Resolution</a></li>
+                            <li><a class="dropdown-item" href="Advanced Testing.html">Advanced Testing</a></li>
+                            <li><a class="dropdown-item" href="Chorus Infrastructure.html">Chorus Infrastructure</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="wifi-solutions.html">Wi-Fi Solutions</a></li>
+                            <li><a class="dropdown-item" href="data-cabling-pbx-solutions.html">Data & PBX Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why UDCOMMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="capabilities.html">Capabilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-       <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="feature-box p-4 rounded h-100">
-          <h5>Smart FIbre Audit & Mapping</h5>
-          <p class="small">Our proprietary service helps ISPs and network owners identify inefficiencies, reduce costs, and optimise long-term performance.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-slideshow">
+        <div class="slideshow">
+            <img src="Data_centre.jpg" class="slide show" />
+            <img src="Data_centre01.jpg" class="slide" />
+            <img src="Data_centre02.jpg" class="slide" />
+            <img src="Data_Centre03.jpg" class="slide" />
+            <img src="Data_Centre04.jpg" class="slide" />
+            <img src="Data_Centre05.jpg" class="slide" />
         </div>
-      </div>          
-      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="feature-box p-4 rounded h-100">
-          <h5>Chorus Certified</h5>
-          <p class="small">We’re trusted to work on OFDF, AOFDF, and ZOFDF systems across New Zealand.</p>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Powering NZ’s Fibre-Connected Future</h1>
+
+            
+            <p>UDCOMMS delivers expert fibre & data infrastructure across Auckland—from structured cabling to Chorus integration.</p>
+            <a href="#solutions" class="btn btn-primary">Explore Our Solutions</a>
         </div>
-      </div>
-      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="feature-box p-4 rounded h-100">
-          <h5>Future-Proof Installs</h5>
-          <p class="small">From MPO to high-density fibre, we build networks that scale with your needs.</p>
+    </section>
+
+    <!-- New Solutions Overview Section -->
+    <section id="solutions" class="solutions-overview-section text-center">
+        <div class="container py-5">
+            <h2 class="mb-5" data-aos="fade-up">Our Specialized Connectivity Solutions</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-card">
+                        <div>
+                            <h3>High-Speed Wi-Fi Solutions</h3>
+                            <p>Unlock seamless, reliable wireless connectivity for your business. We design, install, and optimize high-performance Wi-Fi networks built to top industrial standards.</p>
+                        </div>
+                        <a href="wifi-solutions.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Data Cabling & PBX Systems</h3>
+                            <p>Build the foundation of a high-performing network with our expert structured data cabling and fiber optic installations. We also provide reliable PBX system setup.</p>
+                        </div>
+                        <a href="data-cabling-pbx-solutions.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Fibre Installations</h3>
+                            <p>High-speed fibre optic deployment for commercial, residential, and edge-center builds. We ensure your infrastructure is future-proof and performs optimally.</p>
+                        </div>
+                        <a href="fibre installations.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Structured Cabling</h3>
+                            <p>Clean, scalable, and future-ready structured cabling and patch panel solutions for optimal network performance and simplified management.</p>
+                        </div>
+                        <a href="structured cabling.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Network Upgrades & Audits</h3>
+                            <p>We assess, optimize, and future-proof your network with comprehensive audits and strategic upgrade plans, ensuring peak performance and compliance.</p>
+                        </div>
+                        <a href="network upgrades & audits.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Fault Resolution</h3>
+                            <p>Rapid, end-to-end fault isolation and resolution for network issues. From diagnostics to restoration, we minimize your downtime and ensure business continuity.</p>
+                        </div>
+                        <a href="fault resolution.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Advanced Testing</h3>
+                            <p>Precision testing services including MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection for optimal network performance and certification.</p>
+                        </div>
+                        <a href="Advanced testing.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="solution-card">
+                        <div>
+                            <h3>Chorus Infrastructure</h3>
+                            <p>Certified expertise in Chorus OFDF, AOFDF, and ZOFDF systems, along with co-location upgrades across New Zealand's national fibre network.</p>
+                        </div>
+                        <a href="Chorus infrastructure.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="feature-box p-4 rounded h-100">
-          <h5>Transparent Communication</h5>
-          <p class="small">We keep you informed at every step—no surprises, just solid delivery.</p>
+    </section>
+    <!-- End New Solutions Overview Section -->
+
+    <!-- Why Choose UDCOMMS -->
+    <section id="why" class="why-choose-us container text-center py-5">
+        <h2 class="mb-4" data-aos="fade-up">Why Choose UDCOMMS</h2>
+        <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+            With over 8 years of experience, we don’t just build networks—we maintain, upgrade, and protect them.
+        </p>    
+        <div class="row">
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Local Expertise</h5>
+                    <p class="small">Based in Auckland, we understand the terrain, the tech, and the telco landscape.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Smart Fibre Audit & Mapping</h5>
+                    <p class="small">Our proprietary service helps ISPs and network owners identify inefficiencies, reduce costs, and optimise long-term performance.</p>
+                </div>
+            </div>            
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Chorus Certified</h5>
+                    <p class="small">We’re trusted to work on OFDF, AOFDF, and ZOFDF systems across New Zealand.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Future-Proof Installs</h5>
+                    <p class="small">From MPO to high-density fibre, we build networks that scale with your needs.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Transparent Communication</h5>
+                    <p class="small">We keep you informed at every step—no surprises, just solid delivery.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Technical Precision</h5>
+                    <p class="small">Every install is measured, mapped, and tested—no guesswork, no shortcuts.</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="feature-box p-4 rounded h-100">
+                    <h5>Future-Focused Vision</h5>
+                    <p class="small">Smart Fibre Audits, bundled utility models, and scalable solutions—UDCOMMS is built for what comes next.</p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-<div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="600">
-  <div class="feature-box p-4 rounded h-100">
-    <h5>Wi-Fi & Smart Connectivity</h5>
-    <p class="small">Beyond cables—seamless wireless solutions for homes, offices, and commercial sites.</p>
-  </div>
-</div>
-
-<div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
-  <div class="feature-box p-4 rounded h-100">
-    <h5>Technical Precision</h5>
-    <p class="small">Every install is measured, mapped, and tested—no guesswork, no shortcuts.</p>
-  </div>
-</div>
-
-<div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="800">
-  <div class="feature-box p-4 rounded h-100">
-    <h5>Future-Focused Vision</h5>
-    <p class="small">Smart Fibre Audits, bundled utility models, and scalable solutions—UDCOMMS is built for what comes next.</p>
-  </div>
-</div>
-
-
-
-
-
-
-
-      
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section id="stats" class="stats-section text-center py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="mb-4">Our Impact in Numbers</h2>
-      <div class="row">
-        <div class="col-md-3 stat-box">
-          <h3><span class="counter" data-target="100">0</span>+</h3>
-          <p>Network Builds</p>
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section text-center py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="mb-4">Our Impact in Numbers</h2>
+            <div class="row">
+                <div class="col-md-3 stat-box">
+                    <h3><span class="counter" data-target="100">0</span>+</h3>
+                    <p>Network Builds</p>
+                </div>
+                <div class="col-md-3 stat-box">
+                    <h3><span class="counter" data-target="8">0</span>+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-md-3 stat-box">
+                    <h3><span class="counter" data-target="24">0</span>/7</h3>
+                    <p>Support Availability</p>
+                </div>
+                <div class="col-md-3 stat-box">
+                    <h3><span class="counter" data-target="99.9">0</span>%</h3>
+                    <p>Network Reliability</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 stat-box">
-          <h3><span class="counter" data-target="8">0</span>+</h3>
-          <p>Years of Experience</p>
-        </div>
-        <div class="col-md-3 stat-box">
-          <h3><span class="counter" data-target="24">0</span>/7</h3>
-          <p>Support Availability</p>
-        </div>
-        <div class="col-md-3 stat-box">
-          <h3><span class="counter" data-target="99.9">0</span>%</h3>
-          <p>Network Reliability</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- Call to Action Banner -->
-  <section class="cta-banner text-center py-5" data-aos="zoom-in">
-    <div class="container">
-      <h2 class="mb-3">Let’s Build Your Next-Gen Network</h2>
-      <p class="mb-4">From fibre rollouts to co-location upgrades, UDCOMMS is your trusted partner in connectivity.</p>
-      <a href="#contact" class="btn btn-primary">Request a Quote</a>
-    </div>
-  </section>
+    <!-- Call to Action Banner -->
+    <section class="cta-banner text-center py-5" data-aos="zoom-in">
+        <div class="container">
+            <h2 class="mb-3">Let’s Build Your Next-Gen Network</h2>
+            <p class="mb-4">From fibre rollouts to co-location upgrades, UDCOMMS is your trusted partner in connectivity.</p>
+            <a href="#contact" class="btn btn-primary">Request a Quote</a>
+        </div>
+    </section>
 
 
 <!-- About Us -->
 <section id="about" class="about-section container py-5 text-center" data-aos="fade-up">
-  <h2 class="mb-4">About UDCOMMS</h2>
-  <p class="lead mb-4">
-    Universal Data Communications Ltd (UDCOMMS) is an Auckland-based team of fibre infrastructure specialists with more than 8 years of experience building, maintaining, and upgrading networks across New Zealand.
-  </p>
-  <p class="mb-3">
-    From structured cabling in commercial builds to MPO testing in co-location facilities, our technicians combine precision engineering with field-tested expertise. We are certified across Chorus infrastructure, ZOFDF/OFDF systems, and advanced fibre diagnostics including OTDR, iOLM, Fluke DSX, and end-face inspections.
-  </p>
-  <p class="mb-3">
-    At UDCOMMS, we believe in transparent communication, rapid issue resolution, and scalable network design. Whether you're laying the groundwork for a future-focused build or addressing faults in a critical link—we’re here to deliver, long after the cables are cut and connected.
-  </p>
+    <h2 class="mb-4">About UDCOMMS</h2>
+    <p class="lead mb-4">
+       Universal Data Communications Ltd (UDCOMMS) is a leading Auckland-based firm, dedicated to building, maintaining, and upgrading New Zealand's critical fibre infrastructure. With over 8 years of unparalleled experience, we are the trusted specialists powering the nation's digital future.
+    </p>
+    <p class="mb-3">
+       Our certified technicians bring a blend of precision engineering and extensive field-tested expertise to every project. From intricate structured cabling in commercial developments to advanced MPO testing in high-density co-location facilities, we ensure flawless execution. We hold comprehensive certifications across Chorus infrastructure (OFDF, AOFDF, ZOFDF systems) and utilize cutting-edge fibre diagnostics, including OTDR, iOLM, Fluke DSX, and meticulous end-face inspections, guaranteeing optimal network performance.
+    </p>
+    <p class="mb-3">
+       At UDCOMMS, our commitment extends beyond technical excellence. We champion transparent communication, rapid issue resolution, and innovative, scalable network design. Whether you're establishing foundational infrastructure for a new venture or seeking to resolve complex network challenges, we are your reliable partner, delivering robust and future-proof connectivity solutions that stand the test of time.
 </section>
 
-  
-  <!-- Contact Section -->
-  <section id="contact" class="contact container py-5" data-aos="fade-up">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form action="https://formspree.io/f/myzjlkzl" method="POST">
-          <div class="mb-3">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
-          </div>
-          <div class="mb-3">
-            <input type="email" name="email" class="form-control" placeholder="Your Email" required />
-          </div>
-          <div class="mb-3">
-            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </div>
-        </form>
-               <div class="mt-4 text-center">
-          <p><strong>Email:</strong> <a href="mailto:Ben@udcomms.co.nz">Ben@udcomms.co.nz</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+64 21 244 7500">+64 21 244 7500</a></p>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact container py-5" data-aos="fade-up">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="https://formspree.io/f/myzjlkzl" method="POST">
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+                        <div class="mt-4 text-center">
+                    <p><strong>Email:</strong> <a href="mailto:Ben@udcomms.co.nz">Ben@udcomms.co.nz</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+64242447500">+64 24 244 7500</a></p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer text-center py-4">
-    <div class="container">
-      <p>&copy; 2025 UDCOMMS – Universal Data Communications Ltd. Auckland, NZ</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 UDCOMMS – Universal Data Communications Ltd. Auckland, NZ</p>
+        </div>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
 
-    const counters = document.querySelectorAll('.counter');
-    const speed = 200;
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
 
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / speed;
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
 
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  </script>
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    </script>
 
 
 
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelectorAll('.slide');
-    let current = 0;
+    document.addEventListener('DOMContentLoaded', function () {
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
 
-    setInterval(() => {
-      slides[current].classList.remove('show');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('show');
-    }, 4000);
-  });
+        setInterval(() => {
+            slides[current].classList.remove('show');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('show');
+        }, 4000);
+    });
 </script>
 </body>
 </html>
