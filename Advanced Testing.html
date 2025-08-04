@@ -1,50 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H47SG66NNZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H47SG66NNZ');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="udc-logo.png" type="image/x-icon" style="height: 200px; width: auto;">
+	<link rel="icon" href="udc-logo.png" sizes="32x32" type="image/png">
+
 
     <!-- SEO Meta Tags for Advanced Testing -->
     <title>UDCOMMS | Advanced Fibre & Network Testing Services NZ</title>
     <meta name="description" content="UDCOMMS offers MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection for optimal network performance in New Zealand. Ensure precision and reliability.">
     <meta name="keywords" content="advanced network testing, MPO cabling testing, OTDR testing, iOLM testing, Fluke testing, fibre end-face inspection, network performance testing, fibre certification, data cable testing, Auckland network testing">
     <meta name="author" content="Gurjinder Singh">
+<meta property="og:title" content="UDCOMMS | Advanced Fibre & Network Testing Services NZ">
+<meta property="og:description" content="Ensure network performance with MPO cabling, OTDR, iOLM, and Fluke testing. Trusted across New Zealand.">
+<meta property="og:image" content="https://udcomms.co.nz/udc-logo.png">
+<meta property="og:url" content="https://udcomms.co.nz/Advanced%20Testing.html">
+<meta name="twitter:card" content="summary_large_image">
+    <!-- JSON-LD Schema Markup for SEO -->
+    <!-- This helps Google understand your service and can lead to rich search snippets. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Advanced Fibre & Network Testing",
+      "serviceType": "Telecommunications",
+      "provider": {
+        "@type": "Organization",
+        "name": "UDCOMMS",
+        "url": "https://udcomms.co.nz",
+        "logo": "https://udcomms.co.nz/udc-logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+64 24 244 7500",
+          "email": "Ben@udcomms.co.nz",
+          "contactType": "customer service"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "New Zealand"
+      },
+      "description": "UDCOMMS provides specialized, advanced testing services for fibre optic and data networks, including MPO, OTDR, iOLM, and Fluke certification, to ensure peak performance and reliability.",
+      "potentialAction": {
+        "@type": "CallAction",
+        "name": "Request a Quote",
+        "url": "https://udcomms.co.nz/index.html#contact"
+      }
+    }
+    </script>
 
+    <!-- Bootstrap and AOS from your original file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" /> <!-- Link to the external stylesheet -->
+
+    <!-- Custom CSS for Animations and Redesigned Sections -->
+    <style>
+        /* Hero section styling with animated background and a new, abstract graphic. */
+        .hero-section-wifi-page {
+            position: relative;
+            overflow: hidden;
+            /* Enhanced gradient for a more professional and dynamic feel */
+            background: linear-gradient(-45deg, #0f172a, #1e3a8a, #3b82f6);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            text-align: center;
+        }
+
+        /* Keyframes for the hero background animation */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Styling for the abstract network graphic */
+        .network-graphic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2; /* Subtle opacity for a background effect */
+            z-index: 0;
+        }
+
+        /* Animation for the SVG paths */
+        .network-graphic path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 20s linear infinite;
+        }
+
+        /* Animate different paths with a delay to create a flowing effect */
+        .network-graphic path:nth-child(1) { animation-delay: 0s; }
+        .network-graphic path:nth-child(2) { animation-delay: 5s; }
+        .network-graphic path:nth-child(3) { animation-delay: 10s; }
+
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+
+        /* Ensure hero content is above the graphic */
+        .hero-section-wifi-page h1, .hero-section-wifi-page p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Card and icon styling for the new layout */
+        .service-card, .cert-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border: 1px solid #e0e0e0;
+        }
+        .service-card:hover, .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .icon-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .icon-box.bg-blue { background-color: #e0f2fe; color: #3b82f6; }
+        .icon-box.bg-green { background-color: #d1fae5; color: #10b981; }
+        .icon-box.bg-yellow { background-color: #fef3c7; color: #f59e0b; }
+        .cta-banner {
+            background: #111827;
+            border-radius: 1rem;
+            color: white;
+        }
+        
+        /* New process timeline styling */
+        .process-timeline {
+            position: relative;
+            margin-top: 2rem;
+            padding-left: 2rem; /* space for the timeline line */
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0.5rem;
+            width: 2px;
+            background-color: #3b82f6;
+            animation: growLine 1.5s ease-out forwards;
+        }
+        
+        @keyframes growLine {
+            0% { height: 0; }
+            100% { height: 100%; }
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2.5rem;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            border: 3px solid #e0f2fe;
+            animation: bounceIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .process-step:nth-child(1)::before { animation-delay: 0.5s; }
+        .process-step:nth-child(2)::before { animation-delay: 1s; }
+        .process-step:nth-child(3)::before { animation-delay: 1.5s; }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .main-heading {
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        .sub-heading {
+            text-align: center;
+            max-width: 50rem;
+            margin: 0 auto 3rem;
+            color: #6b7280;
+        }
+    </style>
 </head>
 <body>
 
-
-
-
-
-
-
     <!-- Navbar -->
- <Nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-            <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
+                <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
-                     <li class="nav-item"><a class="nav-link"href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link"href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
@@ -70,13 +250,17 @@
         </div>
     </nav>
 
-
-
     <!-- Hero Section for Advanced Testing Page -->
     <section class="hero-section-wifi-page" data-aos="fade-up">
         <div class="container">
-            <h1>Advanced Fibre & Network Testing Services</h1>
-            <p class="lead">Ensuring optimal performance with MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection.</p>
+            <!-- New animated SVG graphic for visual appeal -->
+            <svg class="network-graphic" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <path d="M50 250 Q150 50 500 150 T950 250" stroke="#fff" stroke-width="2" fill="none" class="network-path"></path>
+                <path d="M50 200 Q200 100 500 100 T950 200" stroke="#fff" stroke-width="2" fill="none" class="network-path"></path>
+                <path d="M50 150 Q250 150 500 50 T950 150" stroke="#fff" stroke-width="2" fill="none" class="network-path"></path>
+            </svg>
+            <h1 class="display-4 fw-bold">Advanced Fibre & Network Testing Services</h1>
+            <p class="lead">Ensuring optimal performance with **MPO cabling, OTDR, iOLM, Fluke testing,** and end-face inspection.</p>
         </div>
     </section>
 
@@ -85,54 +269,96 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
 
-                <section class="service-box" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Precision Testing for Uncompromised Network Performance</h2>
-                    <p>The integrity and performance of your network infrastructure are paramount. UDCOMMS provides advanced testing and certification services using industry-leading equipment and methodologies. Our meticulous testing ensures that your fibre and copper cabling systems meet or exceed performance standards, preventing potential issues and maximizing uptime.</p>
-                    <p>Our comprehensive advanced testing capabilities include:</p>
-                    <ul class="checkmark-list">
-                        <li><strong>MPO Cabling Testing:</strong> Specialized testing for Multi-fibre Push-on (MPO) connectors and high-density fibre systems, crucial for data centers.</li>
-                        <li><strong>OTDR (Optical Time Domain Reflectometer) Testing:</strong> Precise fault location, splice loss, and attenuation measurement for fibre optic cables.</li>
-                        <li><strong>iOLM (Intelligent Optical Link Mapper) Testing:</strong> Advanced fibre characterization and troubleshooting, providing intuitive graphical views of fibre links.</li>
-                        <li><strong>Fluke DSX Testing:</strong> Comprehensive certification for copper cabling (Cat5e, Cat6, Cat6A) ensuring performance and compliance.</li>
-                        <li><strong>Fibre End-Face Inspection:</strong> Critical inspection of fibre connector end-faces to identify contamination or damage that can cause signal loss.</li>
-                        <li><strong>Power Meter & Light Source Testing:</strong> Measuring optical power loss for overall link attenuation.</li>
-                        <li><strong>Network Performance Baselines:</strong> Establishing benchmarks for your network's optimal operation.</li>
-                    </ul>
-                    <p>With UDCOMMS's advanced testing services, you gain confidence in the reliability and efficiency of your network infrastructure.</p>
+                <!-- Precision Testing Section (Cards) -->
+                <section class="py-5" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="main-heading h2">Precision Testing for Uncompromised Network Performance</h2>
+                    <p class="sub-heading">The integrity and performance of your network infrastructure are paramount. Our rigorous testing protocols guarantee your systems perform at their peak, with precision that exceeds industry standards.</p>
+                    <div class="row g-4">
+                        <!-- MPO Cabling Testing Card -->
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="icon-box bg-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M15 5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0 0 1h1.5v2H9v-1.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 1 0v-.5h3.5v2h-1.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5zm-11 .5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-2zm1 .5h1v2h-1V6zM1 10a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H1z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5 fw-bold">MPO Cabling Testing</h3>
+                                <p class="text-muted">Specialized testing for Multi-fibre Push-on (MPO) connectors and high-density fibre systems, crucial for data centers and network upgrades.</p>
+                            </div>
+                        </div>
+
+                        <!-- OTDR Testing Card -->
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="icon-box bg-green">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 0h1v15H0V0Zm14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 .708.708L10.5 2.707V10.5a.5.5 0 0 0 1 0V2.707l2.146 2.147a.5.5 0 0 0 .708 0ZM4 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-2 3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-2-2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5 fw-bold">OTDR Testing</h3>
+                                <p class="text-muted">Precise fault location, splice loss, and attenuation measurement for all fibre optic cables using Optical Time Domain Reflectometry.</p>
+                            </div>
+                        </div>
+
+                        <!-- iOLM Testing Card -->
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="icon-box bg-yellow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5 fw-bold">iOLM Testing</h3>
+                                <p class="text-muted">Advanced fibre characterization and troubleshooting with intuitive graphical views of fibre links, simplifying complex analysis.</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
-                <!-- Benefits of Advanced Testing -->
-                <section class="service-box" data-aos="fade-up" data-aos-delay="200">
-                    <h2>Why Advanced Testing is Essential</h2>
-                    <p>Thorough testing and certification are vital for the long-term health and performance of your network:</p>
-                    <ul class="checkmark-list">
-                        <li><strong>Ensure Optimal Performance:</strong> Verify that your cabling supports the required speeds and bandwidth.</li>
-                        <li><strong>Prevent Costly Downtime:</strong> Identify and rectify potential issues before they lead to network failures.</li>
-                        <li><strong>Validate Installations:</strong> Confirm that new installations meet design specifications and industry standards.</li>
-                        <li><strong>Facilitate Troubleshooting:</strong> Accurate test data simplifies future fault finding and maintenance.</li>
-                        <li><strong>Extend Lifespan of Infrastructure:</strong> Proactive testing helps maintain the integrity of your cabling.</li>
-                        <li><strong>Meet Compliance Requirements:</strong> Ensure your network adheres to industry and regulatory standards.</li>
-                    </ul>
+                <!-- Our Certifications & Tools Section -->
+                <section class="py-5" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="main-heading h2">Backed by Industry-Leading Tools and Certifications</h2>
+                    <p class="sub-heading">We use cutting-edge technology and hold key certifications to deliver reliable, certified results every time.</p>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="cert-card text-center d-flex flex-column align-items-center">
+                                <h3 class="h5 fw-bold">Fluke DSX-5000 Certified</h3>
+                                <p class="text-muted small">We use the industry-standard Fluke DSX-5000 to perform comprehensive copper and fibre certification, guaranteeing your network meets TIA/ISO standards.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="cert-card text-center d-flex flex-column align-items-center">
+                                <h3 class="h5 fw-bold">Chorus Infrastructure Specialists</h3>
+                                <p class="text-muted small">Our technicians are certified to work on Chorus's national fibre network, including OFDF, AOFDF, and ZOFDF systems, ensuring seamless integration and reliability.</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
-                <!-- Our Advanced Testing Process -->
-                <section class="service-box" data-aos="fade-up" data-aos-delay="300">
-                    <h2>Our Advanced Testing Process</h2>
-                    <p>UDCOMMS employs a rigorous process for all advanced testing services:</p>
-                    <ol>
-                        <li><strong>Scope Definition:</strong> Understanding your testing requirements and the specific network components to be assessed.</li>
-                        <li><strong>Pre-Test Preparation:</strong> Ensuring all equipment is calibrated and ready for accurate measurements.</li>
-                        <li><strong>Comprehensive Testing:</strong> Executing a series of tests using specialized tools (MPO, OTDR, iOLM, Fluke, etc.).</li>
-                        <li><strong>Data Analysis & Reporting:</strong> Interpreting test results and providing clear, actionable reports with recommendations.</li>
-                        <li><strong>Certification & Documentation:</strong> Delivering official certification documents and updated network schematics.</li>
-                    </ol>
+                <!-- Our Advanced Testing Process (New Graphical Timeline) -->
+                <section class="py-5" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="main-heading h2">Our Advanced Testing Process</h2>
+                    <div class="process-timeline">
+                        <div class="process-step" data-aos="fade-left" data-aos-delay="500">
+                            <h3 class="fw-bold h5">1. Scope Definition</h3>
+                            <p class="text-muted">We begin by collaborating with you to understand your specific testing requirements and the exact components to be assessed.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-left" data-aos-delay="1000">
+                            <h3 class="fw-bold h5">2. Comprehensive Execution</h3>
+                            <p class="text-muted">Our certified team executes a series of rigorous tests on-site using advanced tools like OTDR, iOLM, and Fluke DSX to capture precise data.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-left" data-aos-delay="1500">
+                            <h3 class="fw-bold h5">3. Reporting & Certification</h3>
+                            <p class="text-muted">We provide you with clear, actionable reports and official certification documents, giving you full confidence in your network's performance and compliance.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Call to Action -->
                 <section class="cta-banner text-center py-5" data-aos="zoom-in" data-aos-delay="400">
                     <div class="container">
-                        <h2>Ensure Your Network's Peak Performance</h2>
-                        <p class="lead">Contact UDCOMMS for expert advanced testing and certification services.</p>
+                        <h2 class="fw-bold mb-3">Ensure Your Network's Peak Performance</h2>
+                        <p class="lead mb-4">Contact UDCOMMS for expert advanced testing and certification services.</p>
                         <a href="index.html#contact" class="btn btn-primary btn-lg">Schedule Advanced Testing</a>
                     </div>
                 </section>
@@ -151,11 +377,8 @@
             offset: 50,
         });
 
-        // Script to make navbar clear on scroll (kept for consistency, though 'scrolled' is now default)
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');
-            // This line will still toggle the class, but since 'scrolled' is default,
-            // it will effectively ensure it stays solid unless specific conditions remove it.
             nav.classList.toggle('scrolled', window.scrollY > 50);
         });
     </script>
