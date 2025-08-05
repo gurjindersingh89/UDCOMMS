@@ -1,190 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H47SG66NNZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capabilities | UDCOMMS</title>
 
-  gtag('config', 'G-H47SG66NNZ');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Capabilities | UDCOMMS</title>
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-     <link rel="icon" href="udc-logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="udc-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <style>
-        /* Custom styles for solutions overview on index.html */
-        .solutions-overview-section {
-            padding: 80px 20px;
-            background-color: #0f172a; /* Dark background consistent with body */
-            color: #f1f5f9;
-        }
-        .solutions-overview-section h2 {
-            color: #f8fafc; /* White heading */
-            margin-bottom: 40px;
-            font-weight: 700;
-        }
-        .solution-card {
-            background-color: #1e293b; /* Darker box background */
-            padding: 40px 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            color: #f1f5f9;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-            height: 100%; /* Ensure cards are same height */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .solution-card:hover {
-            transform: translateY(-5px);
-        }
-        .solution-card h3 {
-            color: #3b82f6; /* Blue heading */
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        .solution-card p {
-            margin-bottom: 25px;
-            flex-grow: 1; /* Allows paragraph to take available space */
-        }
-        .solution-card .btn-primary {
-            background-color: #3b82f6;
-            border: none;
-            align-self: flex-start; /* Aligns button to the left */
-        }
-        .solution-card .btn-primary:hover {
-            background-color: #218838; /* Keep original hover green */
-        }
-</style>
 
- <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
-    }
-
-    .navbar {
-      background-color: #0f172a;
-    }
-
-    .navbar-brand img {
-      height: 120px;
-    }
-
-    .nav-link {
-      color: #f8fafc !important;
-    }
-
-    .nav-link.active {
-      color: #3b82f6 !important;
-      font-weight: 600;
-    }
-
-    .capabilities-header {
-      background-color: #0f172a;
-      color: #f8fafc;
-      height: 60vh;
-      padding: 80px 20px;
-      position: relative;
-      margin-top: 56px;
-    }
-
-    .capabilities-header h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-
-    .capabilities-header p {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-top: 10px;
-    }
-
-    .capabilities-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      padding: 60px 20px 80px;
-    }
-
-    .capability-box {
-      background-color: #1e293b;
-      padding: 30px;
-      border-radius: 12px;
-      color: #f1f5f9;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .capability-box:hover {
-      transform: translateY(-5px);
-    }
-
-    .capability-box h3 {
-      color: #3b82f6;
-      margin-bottom: 15px;
-    }
-
-    .capability-box ul {
-      padding-left: 20px;
-      color: #e2e8f0;
-    }
-
-    .capability-box li {
-      margin-bottom: 8px;
-    }
-
-    @media (max-width: 768px) {
-      .capabilities-header {
-        height: auto;
-        padding: 60px 20px;
-      }
-      .capabilities-header h1 {
-        font-size: 2.2rem;
-      }
-      .capabilities-header p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+   
 </head>
 
 <body>
 
-  <!-- Navbar -->
- <Nav class="navbar navbar-expand-lg fixed-top">
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-            <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
+                <img src="udc-logo.png" alt="UDC Logo" class="udc-logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link"href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
-                            <li><a class="dropdown-item" href="Fibre Installations.html">Fibre Installations</a></li>
+                            <li><a class="dropdown-item active" href="Fibre Installations.html">Fibre Installations</a></li>
                             <li><a class="dropdown-item" href="Structured Cabling.html">Structured Cabling</a></li>
                             <li><a class="dropdown-item" href="Network Upgrades & Audits.html">Network Upgrades & Audits</a></li>
                             <li><a class="dropdown-item" href="Fault Resolution.html">Fault Resolution</a></li>
@@ -204,138 +53,178 @@
         </div>
     </nav>
 
-  <!-- Hero Section -->
-  <section class="capabilities-header d-flex align-items-center justify-content-center text-center">
-    <div class="container" data-aos="fade-up">
-      <h1>Our Capabilities</h1>
-      <p class="lead">From testing and terminations to co-location deployments—we bring precision, compliance, and scale.</p>
-    </div>
-  </section>
+    <!-- Hero Section for Network Upgrades Page -->
+    <section class="hero-section-wifi-page" data-aos="fade-up">
+        <div class="container">
+            <!-- New animated SVG graphic for visual appeal -->
+           <svg class="network-graphic" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+			 
+                <path d="M50 200 Q150 50 500 200 T950 250" stroke="#FCD825" stroke-width="1" fill="none" class="network-path"></path>
+				
+				
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#FE9900" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#7DDA58" stroke-width="1" fill="none" class="network-path"></path>
+				
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#8D6F64" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#E2EAF4" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#FFFFFF" stroke-width="1" fill="none" class="network-path"></path>
+							
+			    <path d="M50 200 Q150 50 500 200 T950 250" stroke="#DA0903" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#0B0B0B" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#F6D82F" stroke-width="1" fill="none" class="network-path"></path>
+				
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#CC6CE7" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#FF3A6E" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 200 Q150 50 500 200 T950 250" stroke="#B6D3F5" stroke-width="1" fill="none" class="network-path"></path>
+				
+				
+				
+				 <path d="M50 200 Q160 10 700 100 T550 250" stroke="#FCD825" stroke-width="1" fill="none" class="network-path"></path>
+				 <path d="M50 204 Q160 10 700 100 T550 250" stroke="#FE9900" stroke-width="1" fill="none" class="network-path"></path>
+                 <path d="M50 208 Q160 10 700 100 T550 250" stroke="#7DDA58" stroke-width="1" fill="none" class="network-path"></path>
+				
+				 <path d="M50 212 Q160 10 700 100 T550 250" stroke="#8D6F64" stroke-width="1" fill="none" class="network-path"></path>
+				 <path d="M50 216 Q160 10 700 100 T550 250" stroke="#E2EAF4" stroke-width="1" fill="none" class="network-path"></path>
+				 <path d="M50 220 Q160 10 700 100 T550 250" stroke="#FFFFFF" stroke-width="1" fill="none" class="network-path"></path>
+				
+				 <path d="M50 224 Q160 10 700 100 T550 250" stroke="#DA0903" stroke-width="1" fill="none" class="network-path"></path>
+				 <path d="M50 228 Q160 10 700 100 T550 250" stroke="#7BFF3A" stroke-width="1" fill="none" class="network-path"></path>
+				 <path d="M50 232 Q160 10 700 100 T550 250" stroke="#0B0B0B" stroke-width="1" fill="none" class="network-path"></path>
+				
+                <path d="M50 236 Q160 10 700 100 T550 250" stroke="#F6D82F" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 240 Q160 10 700 100 T550 250" stroke="#CC6CE7" stroke-width="1" fill="none" class="network-path"></path>
+				<path d="M50 244 Q160 10 700 100 T550 250" stroke="#FF3A6E" stroke-width="1" fill="none" class="network-path"></path>
+				
+				<path d="M50 248 Q160 10 700 100 T550 250" stroke="#B6D3F5" stroke-width="1" fill="none" class="network-path"></path>   
+				
+				
+            </svg>
+            
+            <h1 class="display-4 fw-bold">Our Capabilities</h1>
+            <p class="lead">From precision testing and terminations to high-density co-location deployments, we bring compliance and scale to every project.</p>
+        </div>
+    </section>
+    
+    <!-- Main Capabilities Section -->
+    <section class="solutions-overview-section text-center">
+        <div class="container">
+            <h2 class="mb-5" data-aos="fade-up">How We Deliver Excellence</h2>
+            <div class="row justify-content-center">
+                
+                <!-- Card 1: Fibre Installations -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                       <div class="service-card">
+                       
+                            <h3>Fibre Installations</h3>
+                            <p>High-speed fibre optic deployment for commercial, residential, and edge-center builds. We ensure your infrastructure is future-proof and performs optimally.</p>
+                      
+                        <a href="Fibre Installations.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
+                <!-- Card 2: Structured Cabling -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div>
+                            <h3>Structured Cabling</h3>
+                            <p>Clean, scalable, and future-ready structured cabling and patch panel solutions for optimal network performance and simplified management.</p>
+                       </div>
+					   <a href="Structured Cabling.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
-<section class="capabilities-grid container" data-aos="fade-up">
-  <div class="capability-box">
-    <h3>High-Density Fiber Solutions</h3>
-    <ul>
-      <li>MPO trunking, polarity management & continuity testing</li>
-      <li>Connector terminations (LC, SC, MPO) for optimized signal performance</li>
-      <li>Rack builds for co-location & edge center deployments</li>
-    </ul>
-  </div>
+                <!-- Card 3: Network Upgrades & Audits -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                        
+                            <h3>Network Upgrades & Audits</h3>
+                            <p>We assess, optimize, and future-proof your network with comprehensive audits and strategic upgrade plans, ensuring peak performance and compliance.</p>
+                       
+                        <a href="Network Upgrades & Audits.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Card 4: Fault Resolution -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                      <div class="service-card">
+                        <div>
+                            <h3>Fault Resolution</h3>
+                            <p>Rapid, end-to-end fault isolation and resolution for network issues. From diagnostics to restoration, we minimize your downtime and ensure business continuity.</p>
+                        </div>
+                        <a href="Fault Resolution.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
-  <div class="capability-box">
-    <h3>Chorus Network Expertise</h3>
-    <ul>
-      <li>Hands-on experience with OFDF, AOFDF, and ZOFDF systems</li>
-      <li>UFB rollout planning, documentation & compliance</li>
-      <li>Permit acquisition, risk assessments & site safety leadership</li>
-    </ul>
-  </div>
+                <!-- Card 5: Advanced Testing -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                      <div class="service-card">
+                        <div>
+                            <h3>Advanced Testing</h3>
+                            <p>Precision testing services including MPO cabling, OTDR, iOLM, Fluke testing, and end-face inspection for optimal network performance and certification.</p>
+                        </div>
+                        <a href="Advanced Testing.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
-  <div class="capability-box">
-    <h3>Project Management & Communication</h3>
-    <ul>
-      <li>Workflow coordination using Monday.com & NetMap</li>
-      <li>Client-facing updates, milestone tracking & transparent reporting</li>
-      <li>Calm, solution-focused leadership under pressure</li>
-    </ul>
-  </div>
-</section>
+                <!-- Card 6: Chorus Infrastructure -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                       <div class="service-card">
+                        <div>
+                            <h3>Chorus Infrastructure</h3>
+                            <p>Certified expertise in Chorus OFDF, AOFDF, and ZOFDF systems, along with co-location upgrades across New Zealand's national fibre network.</p>
+                        </div>
+                        <a href="Chorus Infrastructure.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
+                <!-- Card 7: Wi-Fi Solutions -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+                       <div class="service-card">
+                        <div>
+                            <h3>Wi-Fi Solutions</h3>
+                            <p>Unlock seamless, reliable wireless connectivity for your business. We design, install, and optimize high-performance Wi-Fi networks built to top industrial standards.</p>
+                        </div>
+                        <a href="wifi-solutions.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
+                <!-- Card 8: Data & PBX Solutions -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+                       <div class="service-card">
+                        <div>
+                            <h3>Data & PBX Solutions</h3>
+                            <p>Build the foundation of a high-performing network with our expert structured data cabling and fiber optic installations. We also provide reliable PBX system setup.</p>
+                        </div>
+                        <a href="data-cabling-pbx-solutions.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-<!-- Advanced Capabilities -->
-<section class="capabilities-grid container" data-aos="fade-up">
-  <div class="capability-box">
-    <h3>Telecom Infrastructure Leadership</h3>
-    <ul>
-      <li>8+ years in fiber & wireless deployment across Auckland</li>
-      <li>Team leadership, field training & workflow coordination</li>
-      <li>Permit management, risk assessments & site safety</li>
-    </ul>
-  </div>
-
-  <div class="capability-box">
-    <h3>Customer-Focused Delivery</h3>
-    <ul>
-      <li>Clear communication with clients & stakeholders</li>
-      <li>Transparent project updates & documentation</li>
-      <li>Calm, solution-focused approach under pressure</li>
-    </ul>
-  </div>
-
-  <div class="capability-box">
-    <h3>Digital Tools & Process Optimization</h3>
-    <ul>
-      <li>Proficient in Bluebeam, NetMap, As-Tech, Monday.com</li>
-      <li>Excel formulas for cost tracking & data management</li>
-      <li>Structured as-built records & future-proofing</li>
-    </ul>
-  </div>
-</section>
-
-  
-  <!-- Capabilities Grid -->
-  <section class="capabilities-grid container" data-aos="fade-up">
-    <div class="capability-box">
-      <h3>Fiber Installation & Testing</h3>
-      <ul>
-        <li>OTDR / iOLM / end-face inspection</li>
-        <li>MPO polarity + continuity testing</li>
-        <li>Connector terminations (LC, SC, MPO)</li>
-      </ul>
-    </div>
-
-    <div class="capability-box">
-      <h3>Structured Cabling & Design</h3>
-      <ul>
-        <li>Cat6 / Cat6A / MPO trunking</li>
-        <li>Co-location high-density rack builds</li>
-        <li>Riser and tray layout coordination</li>
-      </ul>
-    </div>
-
-    <div class="capability-box">
-      <h3>Network Standards & Tools</h3>
-      <ul>
-        <li>Chorus OFDF / ZOFDF / AOFDF systems</li>
-        <li>Tools: Fluke DSX, NetMap, Bluebeam</li>
-        <li>Structured documentation & as-builts</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-<!-- Footer -->
-<footer class="footer text-center py-4">
-  <div class="container">
-    <p class="mb-1">&copy; 2025 UDCOMMS. All rights reserved.</p>
-    <p class="mb-0">
-      Built by <a href="https://github.com/gurjindersingh89" target="_blank">Gurjinder Singh</a> • 
-      <a href="mailto:info@udcomms.co.nz">info@udcomms.co.nz</a>
-    </p>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 UDCOMMS. All rights reserved.</p>
+            <p class="mb-0">
+                Built by <a href="https://github.com/gurjindersingh89" target="_blank">Gurjinder Singh</a> •
+                <a href="mailto:info@udcomms.co.nz">info@udcomms.co.nz</a>
+            </p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
+           AOS.init({
             duration: 800,
             once: true,
             offset: 50,
         });
 
-        // Script to make navbar clear on scroll (kept for consistency, though 'scrolled' is now default)
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');
-            // This line will still toggle the class, but since 'scrolled' is default,
-            // it will effectively ensure it stays solid unless specific conditions remove it.
             nav.classList.toggle('scrolled', window.scrollY > 50);
         });
     </script>
