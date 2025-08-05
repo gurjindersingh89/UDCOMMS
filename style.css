@@ -209,7 +209,9 @@
 
         /* About Section */
         .about-section {
+		
             color: #black;
+           
             line-height: 1.7;
         }
         .about-section p.lead {
@@ -377,7 +379,7 @@
 
         /* Styles specific to Dedicated Service Pages (e.g., wifi-solutions.html, fibre-installations.html) */
         .hero-section-wifi-page { /* Used as a common hero class for all dedicated service pages */
-            background: linear-gradient(to right, #0f172a, #1e293b); /* Darker gradient to match body/cta */
+            background: linear-gradient(to right, #3468e2, #1e293b); /* Darker gradient to match body/cta */
             color: #f8fafc;
             padding: 80px 0;
             text-align: center;
@@ -580,6 +582,207 @@
             setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
         showSlides();
+		
+		
+		 
+        /* Hero section styling with animated background and a new, abstract graphic. */
+        .hero-section-wifi-page {
+            position: relative;
+            overflow: hidden;
+            /* Enhanced gradient for a more professional and dynamic feel */
+            background: linear-gradient(-45deg, #0f172a, #1e3a8a, #3b82f6);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            text-align: center;
+        }
+
+        /* Keyframes for the hero background animation */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+			100% { background-position: 0% 50%; }
+			100% { background-position: 0% 50%; }
+			100% { background-position: 0% 50%; }
+        }
+
+        /* Styling for the abstract network graphic */
+        .network-graphic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0.7; /* Subtle opacity for a background effect */
+            z-index: 0;
+        }
+
+        /* Animation for the SVG paths */
+        .network-graphic path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 3s linear infinite;
+        }
+
+        /* Animate different paths with a delay to create a flowing effect */
+        .network-graphic path:nth-child(1) { animation-delay: 0s; }
+        .network-graphic path:nth-child(2) { animation-delay: 0.3s; }
+        .network-graphic path:nth-child(3) { animation-delay: 0.6s; }
+		.network-graphic path:nth-child(4) { animation-delay: 0.9s; }
+		.network-graphic path:nth-child(5) { animation-delay: 1.2s; }
+		.network-graphic path:nth-child(6) { animation-delay: 1.5s; }
+		.network-graphic path:nth-child(7) { animation-delay: 1.8s; }
+		.network-graphic path:nth-child(8) { animation-delay: 2.1s; }
+		.network-graphic path:nth-child(9) { animation-delay: 2.4; }
+		.network-graphic path:nth-child(10) { animation-delay: 2.7s; }
+		.network-graphic path:nth-child(11) { animation-delay: 3s; }
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+
+        /* Ensure hero content is above the graphic */
+        .hero-section-wifi-page h1, .hero-section-wifi-page p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Card and icon styling for the new layout */
+       .service-card, .cert-card {
+            position: relative; /* Essential for the pseudo-element border animation */
+            background: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            border: 1px solid #012B70; /* The user-requested border color */
+            overflow: hidden; /* To contain the animated border glow */
+        }
+        
+        /* The animated light dot effect */
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(to right, transparent, #6CD601); /* A bright, glowing blue */
+            box-shadow: 0 0 10px 2px #6CD610, 0 0 20px 5px #6CD620;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 100;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+            animation: borderLight 3s linear infinite;
+        }
+
+        @keyframes borderLight {
+            0% { top: 0; left: 0; width: 5px; height: 4px; }
+            25% { top: 0; left: calc(100% - 5px); width: 5px; height: 4px; }
+            25.1% { top: 0; left: calc(100% - 4px); width: 4px; height: 5px; }
+            50% { top: calc(100% - 5px); left: calc(100% - 4px); width: 4px; height: 5px; }
+            50.1% { top: calc(100% - 4px); left: calc(100% - 5px); width: 5px; height: 4px; }
+            75% { top: calc(100% - 4px); left: 0; width: 5px; height: 4px; }
+            75.1% { top: calc(100% - 5px); left: 0; width: 4px; height: 5px; }
+            100% { top: 0; left: 0; width: 4px; height: 5px; }
+        }
+
+        .service-card:hover, .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+        }
+        .icon-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .icon-box.bg-blue { background-color: #e0f2fe; color: #3b82f6; }
+        .icon-box.bg-green { background-color: #d1fae5; color: #10b981; }
+        .icon-box.bg-yellow { background-color: #fef3c7; color: #f59e0b; }
+        .cta-banner {
+            background: #111827;
+            border-radius: 1rem;
+            color: white;
+        }
+        
+        /* New process timeline styling */
+        .process-timeline {
+            position: relative;
+            margin-top: 2rem;
+            padding-left: 2rem; /* space for the timeline line */
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0.5rem;
+            width: 2px;
+            background-color: #3b82f6;
+            animation: growLine 1.5s ease-out forwards;
+        }
+        
+        @keyframes growLine {
+            0% { height: 0; }
+            100% { height: 100%; }
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2.5rem;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            border: 3px solid #e0f2fe;
+            animation: bounceIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .process-step:nth-child(1)::before { animation-delay: 0.5s; }
+        .process-step:nth-child(2)::before { animation-delay: 1s; }
+        .process-step:nth-child(3)::before { animation-delay: 1.5s; }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .main-heading {
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        .sub-heading {
+            text-align: center;
+            max-width: 50rem;
+            margin: 0 auto 3rem;
+            color: #6b7280;
+        }
+   
+		
     </script>
 </body>
 </html>
